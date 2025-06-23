@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#main-heading{
+    text-align: center;
+    font-size: 4.0rem;
+}
+#indiv-heading{
+    text-align: center;
+    font-size: 2.0rem;
+}
+#dronaid-container {
+  padding: 40px; 
+  background-color: black; 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#dronaid {
+  display: flex;
+  padding: 20px;
+  width: 70%;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  align-items: center;
+  gap: 20px;
+}
+
+#club-name{
+    margin: 0 0 10px 0;
+  font-size: 1.4rem;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  border-radius: 4px;
+}
+
+
