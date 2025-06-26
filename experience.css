@@ -1,6 +1,6 @@
 body{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #main-heading{
@@ -13,20 +13,24 @@ body{
 }
 #dronaid-container {
   padding: 40px; 
-  background-color: black; 
+  background-color: white; 
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+#dronaid-container .club-card {
+  width: 830px;
 }
 
 #dronaid {
   display: flex;
   padding: 20px;
   width: 70%;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 4px;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   align-items: center;
   gap: 20px;
 }
@@ -41,5 +45,79 @@ body{
   height: auto;
   border-radius: 4px;
 }
+/* Clubs container */
+#club-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
 
+/* Individual club cards */
+.club-card {
+  background-color: black;
+  color: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
 
+.club-card:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.club-logo {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.club-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+
+.club-role {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.card-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.club-card:hover .card-description {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.club-card:hover .card-front {
+  opacity: 0;
+}

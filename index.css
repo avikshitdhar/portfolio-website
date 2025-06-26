@@ -21,16 +21,52 @@ header div{
     font-size: 2.0rem;
     font-weight: bold;
 }
-#short-intro{
-    height: 575px;
-    background-color: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    /* padding: 50px; */
-    /* width:100%; */
+html {
+  scroll-behavior: smooth;
 }
+
+#short-intro {
+  height: 575px;
+  background: url("images/background.jpg") center center / cover no-repeat fixed;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 100px; /* Push down to avoid navbar overlap */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.intro-text {
+  text-align: left;
+  max-width: 600px;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Ensure contact section has enough space to scroll to */
+#contact {
+  padding: 80px 20px;
+  background-color: white;
+}
+
 #intro{
     padding-left:30px;
     padding-right:30px;
